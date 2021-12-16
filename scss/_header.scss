@@ -1,0 +1,17 @@
+.header {
+  padding-top: 20px;
+  border-bottom: 1px solid #ddd;
+
+  &-utils {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__query {
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+  }
+}

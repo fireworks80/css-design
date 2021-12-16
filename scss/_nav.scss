@@ -1,0 +1,32 @@
+.nav {
+  $this: &;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    flex: 1 0 auto;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 19px;
+      background: #ddd;
+    } // before
+
+    #{$this}__item:first-child &::before {
+      content: none;
+    }
+  } // link
+}
