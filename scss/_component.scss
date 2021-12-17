@@ -10,6 +10,8 @@
 
 // media
 .media {
+  $this: &;
+
   display: flex;
   align-items: center;
 
@@ -33,5 +35,39 @@
 
   &__text {
     margin: 0;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    #{$this}__img {
+      margin-right: 0;
+    }
+
+    #{$this}__content {
+      margin-right: 3.33333%;
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .media {
+    $this: &;
+
+    display: block;
+
+    &__img {
+      flex: none;
+      margin: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &--reverse #{$this}__content {
+      text-align: left;
+    }
   }
 }
