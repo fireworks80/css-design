@@ -2,7 +2,7 @@
 
 ![article](./assets/screenshot/screen-index.png)
 
-````
+```
 // 각 영역을 article로 만듦
 <article>
       <div class="l-center l-center--article"> // l-center의 modifier 를 추가 했다. (padding-t90, bottom)
@@ -30,7 +30,7 @@
     <article class="article-has-bg"> // 화면 좌우 까지 배경색이 들어가야 해서 class 추가
       <div class="l-center l-center--article">
         <h2 class="heading-lv2">마케팅 전략 수립</h2>
-        <div class="media">
+        <div class="media media--reverse"> // 이미지와 텍스트의 위치가 반대려서 block--modifier
           <picture class="media__img">
             <img src="./assets/persona.jpeg" alt="">
           </picture>
@@ -45,5 +45,4 @@
         </div>
       </div>
     </article>
-    ```
-````
+```
