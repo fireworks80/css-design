@@ -1,5 +1,12 @@
 .l-center {
-  max-width: 1230px;
+  max-width: $width-content;
   padding: 0 15px;
   margin: 0 auto;
+
+  &--article {
+    padding: {
+      top: 60px;
+      bottom: 60px;
+    }
+  }
 }
