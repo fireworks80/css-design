@@ -133,6 +133,8 @@
   }
 }
 
+// 베리에이션은 따로 만든다
+// 기존 .btn과 공통요소는 extend로 분리
 .round-btn {
   @extend %btn;
 
