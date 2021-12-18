@@ -125,6 +125,68 @@ body {
     text-align: left;
   }
 }
+.round-btn, .btn {
+  display: inline-block;
+  background-color: #e25c00;
+  border: 2px solid transparent;
+  text-align: center;
+  color: #fff;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.btn {
+  padding: 20px 10px;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.btn:focus, .btn:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: #e25c00;
+}
+.btn--warning {
+  background-color: #f1de00;
+  color: #222;
+}
+.btn--warning:focus, .btn--warning:hover {
+  border-color: #f1de00;
+  color: #222;
+}
+.btn--large {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 340px;
+}
+.btn--arrow-r {
+  position: relative;
+  padding-right: 2em;
+  padding-left: 1.38em;
+}
+.btn--arrow-r::after {
+  content: "\f061";
+  position: absolute;
+  top: 50%;
+  right: 0.83em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transform: translateY(-50%);
+}
+
+.round-btn {
+  padding: 15px 10px;
+  width: 236px;
+  border-bottom-color: #d40152;
+  border-radius: 10px;
+}
+.round-btn:focus, .round-btn:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: #e25c00;
+}
+
 .header {
   padding-top: 20px;
   border-bottom: 1px solid #ddd;
